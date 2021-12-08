@@ -1,0 +1,53 @@
+<section class="footer-info iq-pt-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="iq-footer-box text-left">
+                    <div class="iq-icon">
+                        <i aria-hidden="true" class="ion-ios-location-outline"></i>
+                    </div>
+                    <div class="footer-content">
+                        <h4 class="iq-tw-7 iq-pb-10">Address</h4>
+                        <ng-content select="[address]"></ng-content>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 r4-mt-30">
+                <div class="iq-footer-box text-left">
+                    <div class="iq-icon">
+                        <i aria-hidden="true" class="ion-ios-telephone-outline"></i>
+                    </div>
+                    <div class="footer-content">
+                        <h4 class="iq-tw-7 iq-pb-10">Phone</h4>
+                        <ng-content select="[phone]"></ng-content>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 r-mt-30">
+                <div class="iq-footer-box text-left">
+                    <div class="iq-icon">
+                        <i aria-hidden="true" class="ion-ios-email-outline"></i>
+                    </div>
+                    <div class="footer-content">
+                        <h4 class="iq-tw-7 iq-pb-10">Mail</h4>
+                        <ng-content select="[mail]"></ng-content>
+                    </div>
+                </div>
+            </div>
+            <ng-content></ng-content>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <ul class="info-share" style="text-align: center; margin-top: 10px;">
+                    <ng-content select="[links]"></ng-content>
+                </ul>
+            </div>
+            <ng-content></ng-content>
+        </div>
+        <div class="row iq-mt-40">
+            <div class="col-sm-12 text-center">
+                <div class="footer-copyright iq-ptb-20">© <span id="copyright">{{ year }} </span><a href="javascript:void(0)" class="text-green">Sixteen Hundreds Solutions.</a> All Rights Reserved </div>
+            </div>
+        </div>
+    </div>
+</section>
